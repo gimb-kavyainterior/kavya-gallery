@@ -1,7 +1,15 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['username']))
+{
+    header('location: index.php');
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-
-
 <body>
     <pre>
     <form enctype="multipart/form-data" method="POST">
